@@ -4,49 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Kennadee</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <nav></nav>
     <!--begin form-->
-    <div>
+    <div class="contact">
+      <img src="./photos/prom1.JPG" alt="" />
       <!--begin register form -->
       <form
-        class="register-form register"
+        class="register-form"
         action="/php/quick-inquiry.php"
         method="post"
         name="submit"
       >
-        <input
-          class="register-input white-input"
-          required=""
-          name="name"
-          placeholder="Full Name*"
-          type="text"
-        />
+        <p>message me here</p>
+        <div class="top">
+          <div class="left">
+            <!-- <label
+            >Name: -->
+            <input
+              class="register-input white-input"
+              required=""
+              name="name"
+              placeholder="Full Name*"
+              type="text"
+            />
+            <!-- </label> -->
+            <!-- <label -->
+            <!-- >Email: -->
+            <input
+              class="register-input white-input"
+              required=""
+              name="email"
+              placeholder="Email*"
+              type="email"
+            />
+            <!-- </label> -->
 
-        <input
-          class="register-input white-input"
-          required=""
-          name="email"
-          placeholder="Email*"
-          type="email"
-        />
-
-        <input
-          class="register-input white-input"
-          required=""
-          name="contactPhone"
-          placeholder="Best Contact Phone Number*"
-          type="tel"
-        />
-
-        <input
-          class="register-input white-input"
-          required=""
-          name="message"
-          placeholder="Message"
-          type="text"
-        />
+            <!-- <label
+            >Phone: -->
+            <input
+              class="register-input white-input"
+              required=""
+              name="contactPhone"
+              placeholder="Contact Phone*"
+              type="tel"
+            />
+            <!-- </label> -->
+          </div>
+          <!-- <label -->
+          <!-- >Message: -->
+          <div class="right">
+            <input
+              class="register-input"
+              required=""
+              name="message"
+              placeholder="Message"
+              type="text"
+            />
+          </div>
+        </div>
+        <!-- </label> -->
 
         <input value="Register Now" class="register-submit-top" type="submit" />
       </form>

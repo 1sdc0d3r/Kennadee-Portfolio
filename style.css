@@ -60,4 +60,43 @@ nav div a {
   height: 30em;
   width: 20em;
   margin-left: 25%;
+}
+
+.contact {
+  display: flex;
+  margin: auto;
+  width: 90%;
+}
+.contact img {
+  width: 10em;
+  height: 20em;
+}
+.contact .register-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: wheat;
+  border: 2px solid red;
+}
+.contact .register-form p {
+  text-align: center;
+}
+.contact .register-form .top {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.contact .register-form .top .left {
+  width: 50%;
+}
+.contact .register-form .top .left input {
+  width: 95%;
+}
+.contact .register-form .top .right {
+  width: 50%;
+  border: 2px solid red;
+}
+.contact .register-form .top .right input {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

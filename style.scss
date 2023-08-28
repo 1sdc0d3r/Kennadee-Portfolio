@@ -71,3 +71,56 @@ nav {
   width: 20em;
   margin-left: 25%;
 }
+.contact {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  img {
+    width: 10em;
+    height: 20em;
+  }
+
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    // flex-direction: column;
+    width: 50%;
+    background-color: wheat;
+    // height: 100%;
+    // width: 80%;
+    // margin: auto;
+    // input {
+    border: 2px solid red;
+    // }
+    p {
+      text-align: center;
+    }
+    .top {
+      display: flex;
+      width: 80%;
+      margin: auto;
+
+      .left {
+        width: 50%;
+        // border: 2px solid red;
+        input {
+          width: 95%;
+        }
+      }
+      .right {
+        width: 50%;
+        border: 2px solid red;
+        input {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    input[type="submit"] {
+      // margin-left: 72%;
+      // display: flex-end;
+      // width: 50%;
+      // margin: auto;
+    }
+  }
+}
