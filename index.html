@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kennadee Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <!-- <p>Kennadee's Signature</p> -->
+      <img src="./photos/Kennadee.png" alt="" class="signature" />
+      <div>
+        <a href="/">Portfolio</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="photos">
+      <div class="col1">
+        <img src="./photos/amelia.jpg" alt="kitty" />
+        <img src="./photos/curb-sit.jpg" alt="kitty" id="curb-sit" />
+        <img src="./photos/flowers1.JPG" alt="kitty" />
+        <img src="./photos/flowers2.JPG" alt="" />
+        <img src="./photos/tayle2.JPG" alt="" />
+      </div>
+      <div class="col2">
+        <img src="./photos/grad.JPG" alt="kitty" />
+        <img src="./photos/prom1.JPG" alt="kitty" />
+        <img src="./photos/prom2.JPG" alt="kitty" />
+      </div>
+      <div class="col3">
+        <img src="./photos/prom3.jpg" alt="kitty" />
+        <img src="./photos/riley.jpg" alt="kitty" />
+        <img src="./photos/tayle.JPG" alt="kitty" />
+        <img src="./photos/wall-sit.jpg" alt="kitty" />
+      </div>
+    </div>
+    <footer></footer>
+    <script async>
+      //   const photoList = await import("./photos.js").then(async (res)=>res.default);
+      // const photoList =
+      //  import {photoList} from "./photos.js";
+      const photoList = [
+        {
+          id: 1,
+          title: "10 Prominent Website Design Mistakes",
+          author: "Kennadee",
+          date: "05/2020",
+          imageUrl: "kitty.png",
+          imageAlt: "10 Prominent ",
+          snippet: "Nowadays.",
+          size: "s",
+        },
+
+        {
+          id: 2,
+          title: "10 Prominent Website Design Mistakes",
+          author: "Kennadee",
+          date: "05/2020",
+          imageUrl: "kitty.png",
+          imageAlt: "10 Prominent ",
+          snippet: "Nowadays.",
+        },
+      ];
+      //   await import("./photos.js");
+      //   .then(res => res.default);
+      // const id = new URLSearchParams(window.location.search).get("id");
+      // const article = photoList.find(e => e.id == id)
+
+      // if (!article) window.location = "404.html"
+      const entryPoint = document.querySelector(".photos");
+      console.log(photoList.length);
+      photoList.forEach((photo) => {
+        console.log(photo);
+        //   const title = document.createElement("h1");
+        //   const author = document.createElement("span");
+
+        //   author.classList.add("author");
+        //   const content = document.createElement("p");
+        const img = document.createElement("img");
+        img.src = "./photos/" + photo.imageUrl;
+        img.alt = photo.imageAlt;
+        // entryPoint.append(img);
+
+        //   title.textContent = article.author;
+        //   content.innerHTML = article.snippet;
+
+        //   entryPoint.append(title, author, snippet)
+      });
+    </script>
+  </body>
+</html>
